@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.menuoption.MainActivity" >
+
+    <item
+        android:id="@+id/start_live"
+        android:icon="@mipmap/ic_live"
+        android:orderInCategory="101"
+        android:showAsAction="always"
+        android:title="开始直播"/>
+
+</menu>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.myailive.live.activity.LiveActivity">
+
+    <com.ucloud.ulive.widget.UAspectFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextureView
+            android:id="@+id/textureView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <RelativeLayout
+            android:id="@+id/rl_live_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/filter"
+                    android:text="美颜"
+                    android:paddingEnd="20dp"
+                    android:textSize="18sp"
+                    android:layout_width="wrap_content"
+                    android:background="@color/bantouming"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:id="@+id/btn_swich_cam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="切换镜头" />
+
+                <Button
+                    android:id="@+id/btn_start_live"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="开始直播" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </com.ucloud.ulive.widget.UAspectFrameLayout>
+
+</RelativeLayout>
